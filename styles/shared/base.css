@@ -1,0 +1,65 @@
+:root {
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-admin: "Sora", system-ui, sans-serif;
+  --font-mono: "DM Mono", "SF Mono", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--library-canvas);
+  color: var(--library-ink);
+}
+
+* {
+  scrollbar-color: rgba(74, 158, 255, 0.38) rgba(255, 255, 255, 0.035);
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.035);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 2px solid rgba(6, 11, 24, 0.88);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(74, 158, 255, 0.6), rgba(74, 222, 128, 0.34));
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(74, 158, 255, 0.78), rgba(74, 222, 128, 0.46));
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  letter-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
